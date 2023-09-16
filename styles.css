@@ -1,0 +1,604 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@500;600;700;800;900&display=swap");
+
+/* 
+font-family: 'Kaushan Script', cursive;
+font-family: 'Poppins', sans-serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #252326;
+  margin-top: 3rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav {
+  background-color: #000000;
+  text-align: center;
+  margin-bottom: 0.25rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #ebb555;
+}
+
+nav ul a:active {
+  text-decoration: underline;
+}
+
+nav ul a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.1rem;
+}
+
+.section-2 {
+  display: grid;
+  column-gap: 40px;
+  row-gap: 40px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(100%, 150px, 1fr)); */
+  /* grid-template-columns: repeat(fit-content, minmax(100%, 150px, 1fr)); */
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background: #000000;
+  box-shadow: 1px 1px 8px 7px #ebb555;
+}
+
+.section-2:hover {
+  box-shadow: 1px 1px 5px 5px #ebb555;
+}
+
+article {
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  border-radius: 50%;
+}
+
+article img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+article ul {
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+button {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ebb555;
+  background-color: #000000d7;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+button:hover {
+  box-shadow: 1px 1px 10px #ebb555;
+}
+
+button {
+  border-radius: 8px 5px;
+  padding: 10px;
+}
+
+#hero {
+  background: url(images/banner.jpg);
+  opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  height: 40rem;
+  text-transform: capitalize;
+}
+
+#hero > h1 {
+  font-size: 3.3rem;
+  padding-right: 0.5rem;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.offer {
+  color: #ffffff;
+  text-shadow: 4px 4px 4px #000, 6px 6px 6px #0000, 7px 7px 7px #000,
+    8px 8px 8px #000;
+  max-width: 69rem;
+}
+.offer_msg {
+  color: #ffffff;
+  padding-top: 1rem;
+  padding-right: 0.5rem;
+  padding-bottom: 1rem;
+  text-shadow: 4px 4px 4px #000, 6px 6px 6px #0000, 7px 7px 7px #000,
+    8px 8px 8px #000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  max-width: 60rem;
+}
+.offer_msg > span {
+  color: #ebb555;
+  font-size: 1.9rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+article > p {
+  color: #fff;
+  font-size: 22px;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.heding_title {
+  font-weight: 400;
+  font-size: 40px;
+  color: #ebb555;
+  text-shadow: 4px 4px 4px #000000, 6px 6px 6px #000000, 8px 8px 8px #000000;
+  cursor: pointer;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  text-align: center;
+  margin: 10px 20px #fff;
+  font-family: "Kaushan Script", cursive;
+}
+
+.about {
+  margin-bottom: 15px;
+}
+
+.opening_time {
+  list-style-type: none;
+  color: #ebb555;
+  text-shadow: 4px 4px 4px #000000, 6px 6px 6px #000000, 8px 8px 8px #000000;
+}
+
+footer {
+  margin: 2rem;
+  display: flex;
+  gap: 2rem 1rem;
+}
+
+footer img {
+  max-width: 50%;
+  margin-top: 1rem;
+}
+
+footer p {
+  border-top: #ffff;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  text-align: right;
+  color: white;
+}
+footer div {
+  flex: 1;
+}
+
+/* Media Query Section */
+/* Mobile Device */
+@media (min-width: 320px) and (max-width: 480px) {
+  header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1rem;
+  }
+
+  #hero {
+    background: url(images/banner.jpg);
+    opacity: 0.8;
+    background-position: center;
+    background-size: cover;
+    height: 30rem;
+    text-transform: capitalize;
+  }
+
+  #hero > h1 {
+    font-size: 35px;
+    padding-right: 0.5rem;
+    margin-bottom: 0px;
+    font-weight: 600;
+  }
+  .offer {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    text-shadow: 4px 4px 4px #000, 6px 6px 6px #0000, 7px 7px 7px #000,
+      8px 8px 8px #000;
+    /* max-width: 40px; */
+  }
+
+  .offer_msg {
+    padding-top: 17rem;
+    font-size: 20px;
+    max-width: 30rem;
+  }
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    padding: 5px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .section-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 8px;
+    margin-left: 4px;
+    margin-right: 4px;
+    box-shadow: 1px 1px 5px 5px #ebb555;
+  }
+
+  .section-2:hover {
+    box-shadow: 1px 1px 3px 3px #ebb555;
+  }
+
+  .heding_title {
+    font-family: "Kaushan Script", cursive, sans-serif;
+    font-size: 30px;
+    padding-bottom: 1.5rem;
+  }
+
+  article img {
+    width: 95%;
+    height: 250px;
+    object-fit: cover;
+    object-position: bottom;
+  }
+
+  article > p {
+    max-width: 95%;
+    padding-top: 4px;
+    color: #fff;
+    font-size: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 20;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .catalogue {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ebb555;
+  }
+
+  .learnmore {
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+  }
+
+  .opening_time {
+    text-align: center;
+    font-size: 22px;
+    padding-top: 14px;
+    list-style-type: none;
+    color: #ebb555;
+    text-shadow: 4px 4px 4px #000000, 6px 6px 6px #000000, 8px 8px 8px #000000;
+  }
+
+  footer img {
+    height: 33px;
+    width: 50px;
+    max-width: 50%;
+    margin-top: 10px;
+  }
+
+  footer p {
+    padding-top: 5px;
+    border-top: #ffff;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    text-align: right;
+    color: white;
+  }
+}
+
+/* Ipads , Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1rem;
+  }
+
+  #hero {
+    background: url(images/banner.jpg);
+    opacity: 0.7;
+    background-position: center;
+    background-size: cover;
+    height: 30rem;
+    text-transform: capitalize;
+  }
+
+  #hero > h1 {
+    font-size: 35px;
+    padding-right: 0.5rem;
+    margin-bottom: 0px;
+    font-weight: 600;
+  }
+  .offer {
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    text-shadow: 4px 4px 4px #000, 6px 6px 6px #0000, 7px 7px 7px #000,
+      8px 8px 8px #000;
+    max-width: 30rem;
+  }
+
+  .offer_msg {
+    padding-top: 2rem;
+    font-size: 20px;
+    max-width: 30rem;
+  }
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    padding: 5px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .section-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 8px;
+    margin-left: 4px;
+    margin-right: 4px;
+    box-shadow: 1px 1px 5px 5px #ebb555;
+  }
+
+  .section-2:hover {
+    box-shadow: 1px 1px 3px 3px #ebb555;
+  }
+
+  .heding_title {
+    font-family: "Kaushan Script", cursive, sans-serif;
+    font-size: 30px;
+    padding-bottom: 1.5rem;
+  }
+
+  article img {
+    width: 95%;
+    height: 300px;
+    object-fit: cover;
+    object-position: bottom;
+  }
+
+  .ring {
+    height: 330px;
+    object-position: top;
+  }
+
+  article > p {
+    max-width: 95%;
+    padding-top: 4px;
+    color: #fff;
+    font-size: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 20;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .catalogue {
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ebb555;
+  }
+
+  .learnmore {
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+  }
+
+  .opening_time {
+    font-size: 22px;
+    padding-top: 14px;
+    padding-left: 5rem;
+    list-style-type: none;
+    color: #ebb555;
+    text-shadow: 4px 4px 4px #000000, 6px 6px 6px #000000, 8px 8px 8px #000000;
+  }
+
+  footer img {
+    height: 30px;
+    width: 48px;
+    max-width: 50%;
+    margin-top: 10px;
+  }
+
+  footer p {
+    padding-top: 5px;
+    border-top: #ffff;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    text-align: right;
+    color: white;
+  }
+}
+
+/* Desktops, large Screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+  #hero {
+    opacity: 0.7;
+    height: 35rem;
+  }
+
+  .offer {
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-size: 35px;
+    max-width: 50rem;
+  }
+
+  .offer_msg {
+    padding-top: 1.3rem;
+    font-size: 25px;
+    max-width: 40rem;
+  }
+
+  .heding_title {
+    font-family: "Kaushan Script", "sans-serif", cursive, sans-serif;
+    font-size: 30px;
+    padding-bottom: 1.5rem;
+  }
+
+  article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .section-2 {
+    display: grid;
+    column-gap: 30px;
+    row-gap: 30px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: #000000;
+    box-shadow: 1px 1px 8px 7px #ebb555;
+  }
+
+  .catalogue {
+    margin-left: 1.7rem;
+    border: 1px solid #ebb555;
+  }
+
+  .learnmore {
+    margin-left: 2.4rem;
+    border: 1px solid #ebb555;
+  }
+}
+
+/* Desktops, large Screen */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  #hero {
+    opacity: 0.7;
+    height: 40rem;
+  }
+
+  .offer {
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    font-size: 27px;
+    max-width: 50rem;
+  }
+
+  .offer_msg {
+    padding-top: 1.3rem;
+    font-size: 30px;
+    max-width: 50rem;
+  }
+
+  .offer_msg > span {
+    font-size: 1.7rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    max-width: 60rem;
+  }
+
+  .heding_title {
+    font-family: "Kaushan Script", "sans-serif", cursive, sans-serif;
+    font-size: 37px;
+    padding-bottom: 1.5rem;
+  }
+
+  article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .section-2 {
+    display: grid;
+    column-gap: 30px;
+    row-gap: 30px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: #000000;
+    box-shadow: 1px 1px 8px 7px #ebb555;
+  }
+
+  .catalogue {
+    margin-left: 1.7rem;
+    border: 1px solid #ebb555;
+  }
+
+  .learnmore {
+    margin-left: 2.4rem;
+    border: 1px solid #ebb555;
+  }
+}
